@@ -1,0 +1,6 @@
+[user]
+	email = gabrodru@gmail.com
+	name = Gabriel Rodriguez
+	signingkey = D3F2002720543448
+[gpg]
+	program = /usr/local/bin/gpg

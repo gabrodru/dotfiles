@@ -16,3 +16,5 @@
     ~/bin/sed: /usr/local/opt/gnu-sed/libexec/gnubin/sed
     ~/bin/touch: /usr/local/bin/gtouch
     ~/bin/find: /usr/local/opt/findutils/bin/gfind
+    ~/Library/Application Support/Code/User/settings.json: editors/code/settings.json
+    ~/Library/Application Support/Code/User/keybindings.json: editors/code/keybindings.json

@@ -27,3 +27,13 @@ alias i.='(idea $PWD &>/dev/null &)'
 alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias up='dot package update_all'
+
+#Php
+
+alias phprepl="psysh"
+alias phpunit="./vendor/bin/phpunit --colors"
+alias pf="./vendor/bin/phpunit --filter"
+alias behat="./vendor/bin/behat"
+alias bf="./vendor/bin/behat -p"
+alias cr="composer require --ignore-platform-reqs"
+alias composer="php /usr/local/bin/composer.phar"

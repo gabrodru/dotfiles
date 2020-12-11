@@ -35,3 +35,8 @@ reverse-search() {
   typeset -f zle-line-init >/dev/null && zle zle-line-init
   return $ret
 }
+
+code () { 
+VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;
+}
+
