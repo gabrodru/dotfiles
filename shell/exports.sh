@@ -11,6 +11,13 @@ export FZF_DEFAULT_OPTS='
   --reverse
 '
 
+export HOMEBREW_AUTO_UPDATE_SECS=86400
+export HOMEBREW_NO_ANALYTICS=true
+export HOMEBREW_INSTALL_BADGE="(ʘ‿ʘ)"
+export HOMEBREW_BUNDLE_FILE_PATH=${DOTFILES_PATH}/os/mac/brew/Brewfile
+
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 export path=(
   "$HOME/bin"
   "$DOTLY_PATH/bin"
