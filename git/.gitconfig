@@ -2,5 +2,13 @@
 	email = gabrodru@gmail.com
 	name = Gabriel Rodriguez
 	signingkey = D3F2002720543448
+
+[apply]
+	# Detect whitespace errors when applying a patch
+	whitespace = fix
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
 [gpg]
 	program = /usr/local/bin/gpg
