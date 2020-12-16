@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? Fix error: gpg failed to sign the data
+#?? 1.0.0
+##?
+##? Usage:
+##?   fix_error
+
+docs::eval "$@"
+
+killall gpg-agent
+gpg-agent --daemon
