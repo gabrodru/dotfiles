@@ -2,7 +2,7 @@
     // 👀 VS Code UI
     "editor.cursorBlinking": "smooth",
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.colorTheme": "Codely Dark",
     "workbench.editor.enablePreview": false,
     "workbench.editor.showTabs": true,
     // ⚙️ Common settings
@@ -61,5 +61,17 @@
     "workbench.statusBar.visible": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "workbench.iconTheme": "vscode-icons",
+
+
+    "[php]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+
+    // 🐙 phpcs
+    "phpcs.standard": "PSR12",
+    "phpcs.enable": true,
+    "phpcs.autoConfigSearch": false
 }

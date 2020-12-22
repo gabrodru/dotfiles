@@ -16,7 +16,7 @@
 	ui = true
 
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/gabi/.gitignore_global
 	attributesfile = ~/.gitattributes
 	editor = vim
 	autocrlf = input
@@ -86,7 +86,14 @@
 	whitespace = fix
 [commit]
 	gpgsign = true
+	template = /Users/gabi/.stCommitMsg
 [tag]
 	gpgsign = true
 [gpg]
 	program = gpg
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

@@ -37,3 +37,7 @@ alias behat="./vendor/bin/behat"
 alias bf="./vendor/bin/behat -p"
 alias cr="composer require --ignore-platform-reqs"
 alias composer="php /usr/local/bin/composer.phar"
+
+#Directories
+
+alias rmr='rm -Rf '

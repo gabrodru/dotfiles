@@ -1,8 +1,8 @@
 {
   "require":           {
-    "squizlabs/php_codesniffer": "*",
     "psy/psysh":                 "^0.10",
-    "phpmd/phpmd":               "^2.9"
+    "phpmd/phpmd":               "^2.9",
+    "friendsofphp/php-cs-fixer": "2.17.x-dev"
   },
   "minimum-stability": "dev"
 }

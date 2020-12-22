@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? Export all installed packages
+#?? 1.0.0
+##?
+##? Usage:
+##?  export_apps
+
+docs::eval "$@"
+
+if platform::is_macos; then
+brew services stop --all
+brew bundle dump --file="$HOMEBREW_BUNDLE_FILE_PATH" --force
+echo 'Brew apps exported!'
+
+pip freeze >"$DOTFILES_PATH/langs/python/requirements.txt"
+echo 'Python apps exported!'
+
+ls -1 /usr/local/lib/node_modules | grep -v npm >"$DOTFILES_PATH/langs/js/global_modules.txt"
+echo 'NPM apps exported!'
+fi
+
+if platform::is_linux; then
+  apt list --installed > apt-installed.txt
+   echo 'APT apps exported!'
+fi

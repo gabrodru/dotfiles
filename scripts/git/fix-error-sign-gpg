@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? Fix gpg failed to sign the data fatal: failed to write commit object
+#?? 1.0.0
+##?
+##? Usage:
+##?   fix-error-sign-gpg
+
+docs::eval "$@"
+
+pkill gpg-agent
+gpg-agent --daemon
