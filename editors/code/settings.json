@@ -73,5 +73,28 @@
     // 🐙 phpcs
     "phpcs.standard": "PSR12",
     "phpcs.enable": true,
-    "phpcs.autoConfigSearch": false
+    "phpcs.autoConfigSearch": false,
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "ci.yml"
+            ],
+            "url": "http://json.schemastore.org/github-workflow"
+        },
+        {
+            "fileMatch": [
+                "docker-compose.yml"
+            ],
+            "url": "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"
+        }
+    ],
+    "terminal.integrated.shellArgs.linux": [
+        "-l"
+    ]
+
 }
