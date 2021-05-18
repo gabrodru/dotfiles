@@ -22,3 +22,9 @@ prompt codelytv
 
 source "$DOTFILES_PATH/shell/zsh/key-bindings.zsh"
 source "$DOTLY_PATH/shell/zsh/bindings/reverse_search.zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/gabi/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gabi/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/gabi/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gabi/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
